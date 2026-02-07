@@ -1,5 +1,22 @@
 📌 Descrição do Projeto – Modificador de Fontes
 
+📦 Instalação das dependências
+
+Após baixar ou clonar o projeto, é necessário instalar as dependências antes de iniciá-lo.
+Para isso, execute um dos comandos abaixo no terminal, dentro da pasta do projeto:
+
+npm install
+
+
+ou
+
+npm i
+
+
+Esse processo irá baixar todas as dependências necessárias para que o projeto funcione corretamente.
+
+Somente após a instalação das dependências será possível iniciar o projeto e utilizar todas as funcionalidades disponíveis.
+
 Este projeto consiste em um modificador de fontes, onde o usuário pode digitar uma frase em um campo de texto e, em seguida, selecionar uma fonte para alterar dinamicamente o estilo dessa frase exibida na tela.
 
 A aplicação foi desenvolvida utilizando Vite + React, garantindo maior desempenho no desenvolvimento e uma estrutura moderna de componentes. As fontes disponíveis são armazenadas em um arquivo JSON, que funciona como uma base de dados simulada para o projeto.
