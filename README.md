@@ -1,12 +1,48 @@
-# React + Vite
+📌 Descrição do Projeto – Modificador de Fontes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto consiste em um modificador de fontes, onde o usuário pode digitar uma frase em um campo de texto e, em seguida, selecionar uma fonte para alterar dinamicamente o estilo dessa frase exibida na tela.
 
-Currently, two official plugins are available:
+A aplicação foi desenvolvida utilizando Vite + React, garantindo maior desempenho no desenvolvimento e uma estrutura moderna de componentes. As fontes disponíveis são armazenadas em um arquivo JSON, que funciona como uma base de dados simulada para o projeto.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para gerenciar esses dados, foi utilizado o json-server, permitindo que o React consuma as informações das fontes como se estivesse acessando uma API real. Sempre que o usuário escolhe uma fonte, a aplicação faz a leitura desses dados e aplica o estilo correspondente ao texto digitado.
 
-## Expanding the ESLint configuration
+⚙️ Funcionamento do Projeto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+O usuário digita uma frase no campo de input
+
+As fontes disponíveis são carregadas a partir de um arquivo db.json
+
+Ao selecionar uma fonte, o texto é atualizado dinamicamente com o novo estilo
+
+O React gerencia o estado da aplicação e a renderização em tempo real
+
+▶️ Como executar o projeto
+
+Para que a aplicação funcione corretamente, é necessário executar dois comandos:
+
+npm run dev
+
+
+⚠️ Observação Importante
+
+Caso os modificadores de texto (fontes) não apareçam na aplicação, é necessário iniciar o servidor JSON manualmente com o comando:
+
+json-server --watch db.json --port 3000
+
+
+Esse comando é responsável por disponibilizar as fontes armazenadas no arquivo db.json.
+Sem ele, a aplicação não consegue carregar os modificadores de fonte.
+
+Se os modificadores estiverem aparecendo normalmente, basta aproveitar o projeto, pois nenhum outro comando adicional será necessário além do npm run dev.
+
+🛠️ Tecnologias Utilizadas
+
+React
+
+Vite
+
+JavaScript
+
+JSON
+
+json-server in your project.
