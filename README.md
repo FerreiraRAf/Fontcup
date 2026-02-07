@@ -35,6 +35,15 @@ Sem ele, a aplicação não consegue carregar os modificadores de fonte.
 
 Se os modificadores estiverem aparecendo normalmente, basta aproveitar o projeto, pois nenhum outro comando adicional será necessário além do npm run dev.
 
+⚠️ Requisitos para testar o projeto
+
+Para testar o site corretamente, é necessário ter o Node.js instalado na máquina.
+O Node.js é utilizado para executar o projeto React e também para rodar o json-server, responsável por disponibilizar os modificadores de fonte armazenados no arquivo db.json.
+
+Sem o Node.js, não será possível acessar o servidor JSON e, consequentemente, os modificadores de texto não serão carregados na aplicação.
+
+Após instalar o Node.js, basta executar os comandos indicados para aproveitar todas as funcionalidades do projeto.
+
 🛠️ Tecnologias Utilizadas
 
 React
